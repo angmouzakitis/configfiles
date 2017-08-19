@@ -1,0 +1,45 @@
+xterm*renderFont: true
+xterm*faceName: Liberation Mono
+xterm*faceSize: 9
+xterm*ScrollBar: false
+xterm*backarrowKey: true
+! Use a nice truetype font and size by default... 
+!
+! ! Every shell is a login shell by default (for inclusion of all necessary environment variables)
+xterm*loginshell: true
+xterm*saveLines: 65536
+
+xterm*foreground: rgb:aa/aa/aa
+xterm*background: rgb:00/00/00
+
+xterm*color8:  rgb:68/68/68
+xterm*color9:  rgb:ff/54/54
+xterm*color10: rgb:54/ff/54
+xterm*color11: rgb:d1/7a/1c
+xterm*color12: rgb:54/54/ff
+xterm*color13: rgb:e4/4b/e4
+xterm*color14: rgb:54/ff/ff
+xterm*color15: rgb:b2/b2/b2
+
+xterm*color0:  rgb:00/00/00
+xterm*color1:  rgb:b2/38/38
+xterm*color2:  rgb:18/b2/18
+xterm*color3:  rgb:b2/68/18
+xterm*color4:  rgb:18/18/b2
+xterm*color5:  rgb:b2/18/b2
+xterm*color6:  rgb:18/b2/b2
+xterm*color7:  rgb:b2/b2/b2
+
+xterm*metaSendsEscape: true
+xterm.*.allowScrollLock: true
+xterm*allowBoldFonts: true
+xterm*scrollTtyOutput: false
+xterm.vt100.scrollKey: true
+xterm.vt100.locale: true
+xterm.*.eightBitInput: false
+
+Xft.hinting: true
+Xft.hintstyle: hintslight
+Xft.antialias: true
+Xft.rgba: grb
+Xft.dpi: 72

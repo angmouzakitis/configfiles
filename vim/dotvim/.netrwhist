@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/z/generic-programming/cmake/build/CMakeFiles/CMakeTmp'
+let g:netrw_dirhist_2='/1/home/z/vosys/git/exanest/userspace_examples/api-remoting/sample'
+let g:netrw_dirhist_3='/home/z/.cache/flatpak/system-cache'
+let g:netrw_dirhist_4='/home/z/.cache/flatpak'
+let g:netrw_dirhist_5='/home/z/.cache'
+let g:netrw_dirhist_6='/home/z/bin'

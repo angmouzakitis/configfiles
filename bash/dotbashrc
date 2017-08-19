@@ -1,0 +1,65 @@
+# Supoort for git prompts
+. /usr/share/git/completion/git-prompt.sh 
+
+export BROWSER=google-chrome-stable
+export EDITOR=vim
+export PATH+=:/home/z/bin
+export PATH+=:/home/z/Downloads/gcc-linaro-6.2.1-2016.11-x86_64_aarch64-linux-gnu/bin
+export PATH+=:/openmpi-x86/bin
+export down=/home/z/Downloads
+export WINEARCH=win32
+export WINEPREFIX=/1/home/z/.wine
+export PYTHONSTARTUP=~/.pythonrc
+export QT_QPA_PLATFORMTHEME="qt5ct"
+export N='>/dev/null 2>&1'
+[ "$XDG_CURRENT_DESKTOP" = "KDE" ] || [ "$XDG_CURRENT_DESKTOP" = "GNOME" ] || export QT_QPA_PLATFORMTHEME="qt5ct"
+if [ $UID -eq 0 ]; then
+	export PS1='\[\e[1;31m\]$(__git_ps1) \w \$\[\e[m\] '
+	#export PS1='\[\e[1;31m\]\w \$\[\e[m\] '
+else
+	export PS1='\[\033]0;\w\007\]\[\033[01;32m\]\[\033[01;34m\]$(__git_ps1) \w $ \[\033[00m\]'
+	#export PS1='\[\033]0;\w\007\]\[\033[01;32m\]\[\033[01;34m\]\w $ \[\033[00m\]'
+fi
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias l="ls -l"
+alias grep="grep --color"
+alias vi="vim"
+alias mount="sudo mount"
+alias umount="sudo umount"
+alias swapon="sudo swapon"
+alias su="sudo su"
+alias stm32="source ~z/tei_erg/stm32/1_toolchain_source_me"
+alias cptoftp="cp a.out /home/z/tmp/anonftp"
+alias minicom="sudo minicom -c on"
+alias su="sudo su"
+alias s="sudo su"
+alias ls="ls --color"
+alias grep="grep --color"
+alias vi="vim"
+alias j="ssh root@ju"
+alias h="ssh root@hi"
+alias hh="ssh linaro@hi"
+alias vm1='ssh -o ProxyCommand="ssh -W %h:%p root@trenz" root@vm1'
+alias vm2="ssh root@vm2"
+alias ctmp=". /home/z/bin/ctmp"
+alias frr="cd /2/git/autmost-test/secure_world/freertos/Demo/ARMv8_AARCH32_FastModel_Juno_GCC"
+alias r="ssh root@rcar"
+alias t="ssh root@trenz"
+alias s4="ssh -Y amouz@s4"
+alias tarcd=". /home/z/bin/tarcd"
+alias vlplnx="cd /home/amouz/git/plnx-kernel-source"
+alias p="sudo pacman"
+alias pi="ssh pi@rpi"
+alias mountmecd='. /home/z/bin/mountmecd'
+
+# for C-s
+stty -ixon
+
+xhost + >/dev/null
+git config --global user.email "angmouzakitis@gmail.com"
+git config --global user.name "Angelos Mouzakitis"
+
+#source /1/opt/Xilinx/14.7/ISE_DS/settings64.sh
