@@ -2,7 +2,7 @@ xterm*renderFont: true
 xterm*faceName: Liberation Mono
 xterm*faceSize: 9
 xterm*ScrollBar: false
-xterm*backarrowKey: true
+xterm*backarrowKey: false
 ! Use a nice truetype font and size by default... 
 !
 ! ! Every shell is a login shell by default (for inclusion of all necessary environment variables)
