@@ -1,0 +1,6 @@
+#!/bin/bash
+
+while :; do
+	read LINE
+	_trans :el "$LINE"
+done
